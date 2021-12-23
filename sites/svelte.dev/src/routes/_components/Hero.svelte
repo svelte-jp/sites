@@ -4,7 +4,7 @@
 </script>
 
 <div class="hero">
-	<strong>Cybernetically enhanced web apps</strong>
+	<strong>サイバネティクスで強化されたWebアプリ</strong>
 	<Image
 		data={Machine}
 		alt="The Svelte compiler packaging up your component code"

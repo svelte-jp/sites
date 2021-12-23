@@ -4,7 +4,7 @@ import { imagetools } from 'vite-imagetools';
 
 process.env.VITE_API_BASE = process.env.DOCS_PREVIEW
 	? 'http://localhost:8787'
-	: 'https://api.svelte.dev';
+	: 'https://api.svelte.jp';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
