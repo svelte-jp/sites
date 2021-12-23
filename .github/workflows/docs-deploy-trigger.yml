@@ -3,6 +3,9 @@ name: 'Deploy docs'
 on:
   workflow_dispatch:
     inputs:
+      org:
+        description: 'the target org for the docs'
+        required: true
       repo:
         description: 'the target repo for the docs'
         required: true
@@ -17,6 +20,9 @@ on:
         description: 'the path to your packages in a monorepo (without a leading slash)'
         required: false
         default: 'packages'
+      project_name:
+        description: "advanced option to override the project name (if not set, the project name will be the target repo name)"
+        required: false
 
 jobs:
   publish_docs:
@@ -25,10 +31,14 @@ jobs:
       - uses: actions/checkout@v2
       - name: publish
         id: projects
-        uses: sveltejs/action-deploy-docs@main
+        uses: svelte-jp/action-deploy-docs@main
         with:
+          org: ${{github.event.inputs.org}}
           repo: ${{github.event.inputs.repo}}
           branch: ${{github.event.inputs.branch}}
           docs_path: ${{github.event.inputs.docs_path}}
           pkg_path: ${{github.event.inputs.pkg_path}}
+          project_name: ${{github.event.inputs.project_name}}
+          cf_acc_id: ${{ secrets.CF_ACC_ID }}
+          cf_ns_id: ${{ secrets.CF_NS_ID }}
           cf_token: ${{ secrets.CLOUDFLARE_TOKEN_API_KV }}
