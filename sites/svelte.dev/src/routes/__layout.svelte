@@ -48,7 +48,7 @@
 		</svelte:fragment>
 
 		<svelte:fragment slot="nav-right">
-			<NavItem external="https://kit.svelte.dev">SvelteKit</NavItem>
+			<NavItem external="https://kit.svelte.jp">SvelteKit</NavItem>
 
 			<NavItem external="chat" title="Discord Chat">
 				<span class="small">Discord</span>
