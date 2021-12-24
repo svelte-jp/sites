@@ -37,8 +37,7 @@
 		</article>
 	{/each}
 	<p>
-		See also the <a href="https://svelte.dev/faq" rel="external">Svelte FAQ</a> for questions relating
-		to Svelte directly.
+		また、Svelteに直接関連する質問は <a href="https://svelte.jp/faq" rel="external">Svelte FAQ</a> をご覧ください。
 	</p>
 </div>
 

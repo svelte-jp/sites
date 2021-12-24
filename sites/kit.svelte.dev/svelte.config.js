@@ -2,7 +2,7 @@ import * as path from 'path';
 import netlify from '@sveltejs/adapter-netlify';
 import { imagetools } from 'vite-imagetools';
 
-const API_BASE = process.env.DOCS_PREVIEW ? 'http://localhost:3456' : 'https://api.svelte.dev';
+const API_BASE = process.env.DOCS_PREVIEW ? 'http://localhost:3456' : 'https://api.svelte.jp';
 
 export default {
 	kit: {
