@@ -1,9 +1,19 @@
 # @sveltejs/site-kit changelog
 
-## Unreleased
+## 2.0.1
+
+- Remove `z-index` from `<ul>` in nav component
+
+## 2.0.0
+
+- New `latest` version
+
+## 2.0.0-next.7
 
 - Rebuilt using SvelteKit
 - Shipped with declaration files
+- Added `<SkipLink>`
+- Various
 
 ## 2.0.0-next.6
 

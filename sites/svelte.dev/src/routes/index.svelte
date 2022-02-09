@@ -75,14 +75,17 @@
 					>開発者が最も満足しているフレームワーク</a
 				>
 				にそれぞれ選出されたことを誇りに思います。あなたにもきっと気に入って頂けると思います。もっと詳しく知りたい方は
-				<a href="/blog/svelte-3-rethinking-reactivity" class="cta">こちらの紹介記事</a
+				<a href="/blog/svelte-3-rethinking-reactivity" class="cta"
+					>こちらの紹介記事</a
 				> をご覧ください。
 			</p>
 		</div>
 
 		<div slot="how">
 			<pre><code>
-npx degit <a href="https://github.com/sveltejs/template" style="user-select: initial;">sveltejs/template</a> my-svelte-project
+npx degit <a href="https://github.com/sveltejs/template" style="user-select: initial;"
+						>sveltejs/template</a
+					> my-svelte-project
 cd my-svelte-project
 npm install
 npm run dev
